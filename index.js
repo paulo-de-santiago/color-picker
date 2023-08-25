@@ -17,14 +17,12 @@ getColorBtn.addEventListener("click", function (e) {
   fetch(`https://www.thecolorapi.com/scheme?hex=FF0&mode=${scheme}&count=5`)
     .then((response) => response.json())
     .then((scheme) => {
-      let colorSchemesArray = {};
-
       const colorSchemes = scheme.colors;
       console.log(colorSchemes);
 
       colorSchemes.forEach(function (arrayItem) {
         let arrayHex = Object.values(arrayItem.hex);
-        console.log(arrayHex[0]);
+        /*      console.log(arrayHex[0]); */
         gridColors.innerHTML += `<div class="grid-column" id="grid-column" >
         <div class="grid-column-color" id="grid-column-color" style="background-color:${arrayHex[0]}"></div>
     
