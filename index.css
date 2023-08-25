@@ -1,0 +1,93 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  min-width: 550px;
+  max-width: 550px; 
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* Layout */
+  height: 90px;
+  flex-shrink: 0;
+  /* Style */
+  background: #FFF;
+  box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+
+input {
+  /* Layout */
+  width: 51px;
+  height: 34px;
+
+  /* Style */
+  border: 0.5px solid #313131;
+  background: #F55A5A;
+}
+
+/* Header - dropping list */
+#color-selection {
+  /* Layout */
+  padding: 9px 16px 9px 13px;
+  gap: 7px;
+  width: 312px;
+  height: 42px;
+
+  /* Style */
+  border-radius: 6px;
+  border: 1px solid var(--gray-300, #D1D5DB);
+  background: var(--white, #FFF);
+
+
+}
+
+/* Header - button */
+
+.get-color {
+  /* Layout */
+  padding: 13px 11px;
+
+  /* Style */
+  border-radius: 4px;
+  border: 1px solid var(--gray-300, #D1D5DB);
+  background: var(--white, #FFF);
+
+  /* shadow/sm */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+
+  cursor: pointer;
+
+}
+
+/* Grid colors layout */
+.grid-colors {
+  display: grid; 
+  grid-template-columns: repeat(5,1fr);
+}
+
+.grid-column {
+  display: flex;
+  flex-direction: column;
+}
+.grid-column-color {
+  background-color: aqua;
+  height: 400px;
+ /*  width: 100px; */
+}
+
+.grid-column-hex {
+  color: #2B283A;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 200% */
+
+}
+
